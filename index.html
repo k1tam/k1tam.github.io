@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Kelvin Tam Portfolio</title>
+  <meta name="description" content="WEB222 Assignment 5 Kelvin Tam" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--Normalize CSS across Browser-->
+  <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--CSS Style Sheet-->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="navBar">    
+    <div class="button">
+      <a href="resume\Kelvin Tam 2021 Resume.pdf" target="_blank"><button id="resume">Resume</button></a>
+      <a href="#contactLocation"><button id="contact">Contact Me</button></a>
+    </div>
+</div>
+  <div id="titlepage">
+    <h1>Kelvin Tam.</h1>
+    <!-- <img src="images\IMG_0264.JPG" alt="profile-pic" id="profpic"> -->
+    <h2>🚀B.Eng | Aerospace Engineering, Web Developer</h2>
+  </div>
+
+  <div class="section" id="info">
+    <div class="information-row" id="headers">
+      <div class="about">
+        <h1 data-title="About Me">About Me</h1>
+        <section>
+          Engineering graduate with documented experience in aerospace machine learning & computer science research, repair mechanics and customer service. I am constantly striving to build my skills & knowledge in the fields of computer science & aviation technology. I am a highly self-motivated and analytical team player with academic and workforce project leadership experience. I also love lo-fi music. 
+        </section>
+      </div>
+      <div class="basic">
+        <h1 data-title="Basic Information">Basic Information</h1>
+        <section>
+          <p>
+            <b>Age:</b>24
+          </p>
+          <p>
+            <b>Email:</b>kelvin98tam@gmail.com
+          </p>
+          <p>
+            <b>Language:</b>English, Chinese
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="education">
+    <h1 class="header2">Education</h1> <br>
+    <div class="edu" id="edu-1">
+      <section id="tag">
+        <p>2020-2022</p>
+        <h3>Advanced <br> Diploma</h3>
+      </section>
+      <section id="content">
+        <h3>Computer Programming & Analysis</h3>
+        <p>Seneca College</p>
+      </section>
+    </div>
+    <hr>
+    <div class="edu" id="edu-2">
+      <section id="tag">
+        <p>2015-2019</p>
+        <h3>Bachelor's <br> Degree</h3>
+        <i>Engineering</i>
+      </section>
+      <section id="content">
+        <h3>Aerospace Engineering (B. Eng)</h3>
+        <p>Ryerson University</p>
+        <i>Ryerson Aerospace Aircraft Design Capstone Competition - 1st Place</i><br>
+        <i>CASI Toronto Aircraft Design, Aircraft Stability & Controls Certificate</i>
+      </section>
+    </div>
+  </div>
+
+  <div class="section" id="form">
+    <a id="contactLocation">
+      <h1 class="header2">Contact Me</h1>
+    </a>
+    <form action="https://httpbin.org/post" method="POST" target="_blank" id="form1" name="ContactForm">
+      <div class="form-row">
+        <!--Name-->
+          <div class="form-group col-md-6">
+            <label for="name">Name: </label>
+            <input type="text" class="form-control" name="fullname" id="name"  required>
+          </div>
+        <!--Email-->
+          <div class="form-group col-md-6">
+            <label for="email"> Email:</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+          </div>
+      </div>
+
+        <!--Address-->
+          <div class="form-group col-md-8">
+            <label for="address"> Mailing Address:</label>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Unit/Apt Number, Street Address">
+          </div>
+
+      <div class="form-row">
+        <!--City-->
+          <div class="form-group col-md-4">
+            <label for="city" name="city">City: </label>
+            <input type="text" class="form-control" name="city" id="city" list="suggestions">
+          </div>
+
+        <!--Postal Code-->
+          <div class="form-group col-md-6">
+            <label for="postal" name="postal">Postal Code: </label>
+            <input type="text" class="form-control" name="postalCode" id="postal" pattern="[a-zA-Z][0-9][a-zA-Z]\s?[0-9][a-zA-Z][0-9]"
+              placeholder="A1B 2C3">
+          </div>
+      </div>
+
+      <!--Phone Number-->
+        <div class="form-group col-md-6">
+          <label for="tel"> Phone Number:</label>
+          <input type="number" class="form-control" name="phoneNumber" id="tel" >
+        </div>
+
+      <div class="form-group">
+        <!--Radio-->
+        <div class="form-check form-check-inline">
+          <!--Radio circles-->
+          <div class="form-row">
+            <input type="radio" class="form-check-input" name="radioSel" id="question" value="question">
+            <label for="question" class="form-check-label">Question</label>
+            <input type="radio" class="form-check-input" name="radioSel" id="comment" value="comment">
+            <label for="comment" class="form-check-label">Comment</label>
+            <input type="radio" class="form-check-input" name="radioSel" id="hiring" value="hiring">
+            <label for="hiring" class="form-check-label">Hiring</label>
+            <!--Input Area-->
+            <div class="form-group col-md-15">
+              <textArea class="form-control" name="questionTxt" id="questiontext" rows="3" style="display:none"
+                placeholder="Enter your questions here!"></textArea>
+              <textArea class="form-control" name="commentTxt" id="commenttext" rows="3" style="display:none"
+                placeholder="Enter your comments here!"></textArea>
+              <div id="hiretext" style="display:none">
+                <textArea class="form-control" name="hireTxt" rows="3"
+                  placeholder="Please insert the position details here!"></textArea><br>
+              </div>
+              <div class="form-inline col-md-6" id="rate" style="display:none">
+                <label for="rateInput">Please enter your rate: $</label>
+                <input type="number" class="form-control" name="hireRate" id="rateInput" step="0.01" placeholder="xx.xx/hr"><br><br>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="submit" id="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+    </form>
+  </div>
+</body>
+
+</div>
+<script src="js/app.js"></script>
+
+</html>
+
+<datalist id="suggestions">
+  <!--[if lte IE 9]><select><![endif]-->
+  <option label="Barrie" value="Barrie"></option>
+  <option label="Calgary" value="Calgary"></option>
+  <option label="Charlottetown" value="Charlottetown"></option>
+  <option label="Chibougamau" value="Chibougamau"></option>
+  <option label="Chilliwack" value="Chilliwack"></option>
+  <option label="Cold Lake" value="Cold Lake"></option>
+  <option label="Dorval" value="Dorval"></option>
+  <option label="Edmonton" value="Edmonton"></option>
+  <option label="Flin Flon" value="Flin Flon"></option>
+  <option label="Hamilton" value="Hamilton"></option>
+  <option label="Iqualuit" value="Iqualuit"></option>
+  <option label="Ottawa" value="Ottawa"></option>
+  <option label="Miramichi" value="Miramichi"></option>
+  <option label="Montreal" value="Montreal"></option>
+  <option label="Red Deer" value="Red Deer"></option>
+  <option label="St. John" value="St. John"></option>
+  <option label="St. John's" value="St. John's"></option>
+  <option label="Toronto" value="Toronto"></option>
+  <option label="Vancouver" value="Vancouver"></option>
+  <option label="Whitehorse" value="Whitehorse"></option>
+  <option label="Winnipeg" value="Winnipeg"></option>
+  <option label="Yellowknife" value="Yellowknife"></option>
+  <!--[if lte IE 9]></select><![endif]-->
+</datalist>

@@ -1,0 +1,143 @@
+
+/*Body Settings*/
+body {
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+    transition: all 1s ease;
+    font-family: 'Space Mono', monospace;
+}
+
+/*Font setup*/
+h1, h2, h3, label {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/*Big Sections*/
+.section {
+    background-color: white;
+    margin: 100px auto;
+    width: 90%;
+    max-width: 1100px;
+    padding: 10px 100px 20px;
+    /*Shadow effect*/
+    /* box-shadow: 3px 3px 15px 15px #888888;  */
+}
+
+/*HOVER ANIMATIONS*/
+/*Div Hover animation*/
+.section:hover {
+    transform: translateY(1%); /*translate div down*/
+    transition: 0.2s;
+}
+
+/*Scroll activated background color change*/
+.colorblock {
+    /*secondary color background*/
+    background-color: #797D7F;
+}
+
+/*Button Animations*/
+#resume, #contact, #submit{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: white; /*set 1 colour*/
+    background-color: black;
+    font-size: small;
+    transition: ease-out 0.3s;
+    position: relative;
+    z-index: 1;
+}
+#resume:hover, #contact:hover, #submit:hover{
+    background-color: white; /*set 2 colour*/
+    color: black;
+    border: 3px solid black;
+    font-weight: bold;
+    cursor:pointer;
+}
+#resume:before, #contact:before, #submit:before{
+    transform: 0.5s all ease; /*transition timer*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    opacity: 0; /*off opacity*/
+    content: "";
+    background-color: white;
+}
+#resume:hover:before, #contact:hover:before, #submit:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1; /*on opacity*/
+    z-index: -1;
+}
+
+/*Section 4 - Contact Me remove hyperlink parameters*/
+#contactLocation:hover, #contactLocation{
+    /*Remove Contact hyperlink colouring*/
+    color: black;
+    /*Remove Contact underline*/
+    text-decoration: none;
+}
+
+#navBar{
+    padding: 30px;
+    margin: 5px;
+    border-bottom: 1px solid black;
+    box-shadow: #888888;
+}
+
+/*Section 1 - First Block*/
+#titlepage{
+    padding: 50px 150px;
+}
+
+#titlepage h1{
+    font-size: 100px;
+}
+
+/*Section 2 - About me/Basic info*/
+
+.edu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-row {
+    display: flex;
+    gap: 20px;
+}
+
+.basic b {
+    display: inline-block;
+    width: 80px;
+}
+
+/*Section 3 - Education*/
+.edu #tag{
+    flex: 30%;
+    text-align: center;
+    font-size: larger;
+}
+.edu #content{
+    flex: 70%;
+}
+
+hr {
+    margin: 20px 0;
+    border-bottom: 1px solid #bbb;
+}
+
+/*Screen size responsiveness*/
+@media screen and (max-width:900px) {    
+    /* .section {
+        padding: 10px 40px 20px;
+    } */
+
+    /* .information-row {
+        flex-direction: column;
+    } */
+}
