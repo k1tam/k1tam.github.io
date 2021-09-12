@@ -16,7 +16,7 @@ h1, h2, h3, label {
 .section {
     background-color: white;
     margin: 100px auto;
-    width: 90%;
+    width: 120%;
     max-width: 1100px;
     padding: 10px 100px 20px;
     /*Shadow effect*/
@@ -88,6 +88,9 @@ h1, h2, h3, label {
     margin: 5px;
     border-bottom: 1px solid black;
     box-shadow: #888888;
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 /*Section 1 - First Block*/
@@ -111,11 +114,6 @@ h1, h2, h3, label {
     gap: 20px;
 }
 
-.basic b {
-    display: inline-block;
-    width: 80px;
-}
-
 /*Section 3 - Education*/
 .edu #tag{
     flex: 30%;
@@ -129,6 +127,10 @@ h1, h2, h3, label {
 hr {
     margin: 20px 0;
     border-bottom: 1px solid #bbb;
+}
+
+.prj{
+    display: flex;
 }
 
 /*Screen size responsiveness*/
