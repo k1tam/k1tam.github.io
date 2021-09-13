@@ -24,26 +24,27 @@
 
 <body>
   <div id="navBar">    
-    <div class="button">
-      <a href="resume\Kelvin Tam 2021 Resume.pdf" target="_blank"><button id="resume">Resume</button></a>
+    <div class="navbutton">
+      <a href="documents/Kelvin Tam 2021 Resume.pdf" target="_blank"><button id="resume">Resume</button></a>
+      <a href="#prjlocation"><button id="project">My Projects</button></a>
       <a href="#contactLocation"><button id="contact">Contact Me</button></a>
     </div>
 </div>
   <div id="titlepage">
     <h1>Kelvin Tam.</h1>
     <!-- <img src="images\IMG_0264.JPG" alt="profile-pic" id="profpic"> -->
-    <h2>🚀 Aerospace Engineer & 💻 Software Developer</h2>
+    <h2>🚀 Aerospace Engineer turned 💻 Software Developer</h2>
   </div>
 
   <div class="section" id="info">
     <div class="information-row" id="headers">
       <div class="about">
-        <h1 data-title="About Me">About Me</h1>
+        <h1 class="header" data-title="About Me">Hello there!</h1>
         <section>
-          Hi there! I'm an engineering graduate with documented experience in aerospace machine learning & computer science research, repair mechanics and customer service. 
+          I'm an engineering graduate with documented experience in aerospace machine learning & computer science research, repair mechanics and customer service. 
           I am constantly striving to build my skills & knowledge in the fields of computer science & aviation technology. 
           I am a highly self-motivated and analytical team player with academic and workforce project leadership experience. 
-          During my free time I enjoy making lo-fi music and going for long bike rides. 
+          During my free time, I enjoy making lo-fi music and going for long bike rides. 
         </section>
       </div>
 
@@ -51,7 +52,7 @@
   </div>
 
   <div class="section" id="education">
-    <h1 class="header2">Education</h1> <br>
+    <h1 class="header">Education</h1> <br>
     <div class="edu" id="edu-1">
       <img src="images\seneca-logo.png" alt="seneca-logo" style="width: 20%;">
       <section id="tag">
@@ -84,10 +85,13 @@
 
   <div class="section" id="projects">
     <section>
-      <h1 class="header2">Projects</h1>
+      <a id="prjlocation">
+        <h1 class="header">Projects</h1>
+      </a>
         <div class="prj" id="drone">
-          <div>
+          <div class="prj-content">
            <h3>Agricultural Planting Drone</h3>
+           <h5>🤖 <i> Engineering Project </i></h5>
            <ul>
               <li>Developed an Arduino based agricultural purposed drone sensor package which monitors crop conditions, detects
               for fresh crop locations and maximum sizing. Compatible with a wide angle camera module package
@@ -101,12 +105,44 @@
                 simulation of mission loads before live prototype trials
               </li>
             </ul>
+            <div style="text-align: center";>
+              <a href="documents/AER817_Phase_03_Report_Section_03_Group_03.pdf" target="_blank" "><button  id="drone-report">📃</button></a>
+            </div>
+            
           </div>
-          <img src="images\agricultural-drone.jpg" alt="agr-drone">
+          <img class="prj-img" src="images\agricultural-drone.jpg" alt="agr-drone">
         </div>
         <hr>
-        <h3>Aircraft Design Engineering Capstone</h3>
-        <h4><i>Electric Single-Prop Trainer Aircraft  </i></h4>
+        <div class="prj" id="aircraft">
+          <div class="prj-content">
+            <h3>Aircraft Design Engineering Capstone</h3>
+            <h5> ✈️ <i> Dacion Falco E-1 Electric Single-Prop Trainer Aircraft </i></h5>
+            <ul>
+              <li>
+                Guiding system integration and progress deliverables while being in close liaison with subteams and faculty as project manager
+              </li>
+              <li>
+                Utilized CATIA V5 with advanced techniques to produce accurate modeling of aircraft systems with professionally
+                scaled engineering drawings at component & assembly level
+              </li>
+              <li>
+                Designed a hybrid airfoil with 30% higher efficiency than similar class in-market products, optimized with XFLR5 &
+                ANSYS Computational Fluid Dynamics and estimated wing capabilities using Boolean Subtraction Method
+              </li>
+              <li>
+                Analyzed wing and fuselage skeleton components’ structural integrity, stress allowance and deformation failures,
+                using ANSYS Finite Element Analysis, to refine and minimize total aircraft weight while meeting safety constraints
+              </li>
+            </ul>
+            <div style="text-align: center";>
+              <a href="documents/dacion-final-report.pdf" target="_blank" "><button  id="drone-report">📃</button></a>
+            </div>
+          </div>
+          <div class="prj-img">
+            <img src="images\dacion-final.jpg" alt="aircraft-diagram" style="width: 100%;">
+            <img  src="images\dacion-aircraft.jpg" alt="capstone-aircraft" style="width: 100%;">
+          </div>
+        </div>
     </section>
   </div>
 

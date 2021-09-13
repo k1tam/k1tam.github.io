@@ -37,7 +37,7 @@ hiring.onclick = function () {
 // change background colours based on scroll location
 function backgroundChange() 
 {
-    if(this.scrollY > (this.innerHeight * (8/10))) // if scroll gets past a certain point
+    if(this.scrollY > (this.innerHeight * (9.8/10))) // if scroll gets past a certain point
     {
         // add the class that has a different background color 
         document.body.classList.add("colorblock");

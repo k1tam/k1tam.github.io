@@ -12,15 +12,25 @@ h1, h2, h3, label {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+hr {
+    margin: 20px 0;
+    border-bottom: 1px solid #bbb;
+}
+
+h5{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 90%);
+}
+
 /*Big Sections*/
 .section {
-    background-color: white;
+    background-color: whitesmoke;
     margin: 100px auto;
     width: 120%;
     max-width: 1100px;
     padding: 10px 100px 20px;
     /*Shadow effect*/
     /* box-shadow: 3px 3px 15px 15px #888888;  */
+    border-radius: 25px;
 }
 
 /*HOVER ANIMATIONS*/
@@ -37,26 +47,26 @@ h1, h2, h3, label {
 }
 
 /*Button Animations*/
-#resume, #contact, #submit{
-    width: 100px;
-    height: 30px;
+button{
+    width: 200px;
+    height: 50px;
     border: none;
     border-radius: 4px;
     color: white; /*set 1 colour*/
     background-color: black;
-    font-size: small;
+    font-size: medium;
     transition: ease-out 0.3s;
     position: relative;
     z-index: 1;
 }
-#resume:hover, #contact:hover, #submit:hover{
+button:hover{
     background-color: white; /*set 2 colour*/
     color: black;
     border: 3px solid black;
     font-weight: bold;
     cursor:pointer;
 }
-#resume:before, #contact:before, #submit:before{
+button:before{
     transform: 0.5s all ease; /*transition timer*/
     position: absolute;
     top: 0;
@@ -67,7 +77,7 @@ h1, h2, h3, label {
     content: "";
     background-color: white;
 }
-#resume:hover:before, #contact:hover:before, #submit:hover:before{
+button:hover:before{
     transition: 0.5s all ease;
     left: 0;
     right: 0;
@@ -75,8 +85,33 @@ h1, h2, h3, label {
     z-index: -1;
 }
 
+/*Header highlight animation*/
+.header{
+    position:relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.header::after{
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    left: -2rem;
+    bottom: -0.25rem;
+    width: calc(100% + 4rem);
+    background-color: #D5A021;
+    z-index: -1;
+
+    transform: scaleX(0.075);
+    transform-origin: left;
+    transition: transform 250ms ease-in;
+}
+
+.header:hover .header
+
+
 /*Section 4 - Contact Me remove hyperlink parameters*/
-#contactLocation:hover, #contactLocation{
+#contactLocation:hover, #contactLocation, #prjlocation:hover, #prjlocation{
     /*Remove Contact hyperlink colouring*/
     color: black;
     /*Remove Contact underline*/
@@ -90,8 +125,8 @@ h1, h2, h3, label {
     box-shadow: #888888;
     display: flex;
     justify-content: flex-end;
-
 }
+
 
 /*Section 1 - First Block*/
 #titlepage{
@@ -102,16 +137,11 @@ h1, h2, h3, label {
     font-size: 100px;
 }
 
-/*Section 2 - About me/Basic info*/
-
-.edu{
+.edu {
     display: flex;
     justify-content: space-between;
-}
-
-.information-row {
-    display: flex;
-    gap: 20px;
+    background-color: white;
+    border-radius: 30px 30px 30px 0px;
 }
 
 /*Section 3 - Education*/
@@ -124,13 +154,21 @@ h1, h2, h3, label {
     flex: 70%;
 }
 
-hr {
-    margin: 20px 0;
-    border-bottom: 1px solid #bbb;
+.prj {
+    display: flex;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.prj{
-    display: flex;
+.prj-content{
+    flex: 70%;
+}
+
+.prj-img{
+    flex: 50%;
+    flex-direction: column;
 }
 
 /*Screen size responsiveness*/
