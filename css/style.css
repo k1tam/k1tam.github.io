@@ -107,8 +107,10 @@ button:hover:before{
     transition: transform 250ms ease-in;
 }
 
-.header:hover .header
-
+.header:hover .header::after
+{
+    transform: scaleX(1);
+}
 
 /*Section 4 - Contact Me remove hyperlink parameters*/
 #contactLocation:hover, #contactLocation, #prjlocation:hover, #prjlocation{
