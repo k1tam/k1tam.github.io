@@ -85,7 +85,7 @@ button:hover:before{
     z-index: -1;
 }
 
-/*Header highlight animation*/
+/* Header highlight animation
 .header{
     position:relative;
     z-index: 1;
@@ -110,7 +110,7 @@ button:hover:before{
 .header:hover .header::after
 {
     transform: scaleX(1);
-}
+} */
 
 /*Section 4 - Contact Me remove hyperlink parameters*/
 #contactLocation:hover, #contactLocation, #prjlocation:hover, #prjlocation{
@@ -162,6 +162,7 @@ button:hover:before{
     border-radius: 30px 30px 30px 30px;
     justify-content: space-between;
     gap: 20px;
+    padding: 20px;
 }
 
 .prj-content{
@@ -171,6 +172,12 @@ button:hover:before{
 .prj-img{
     flex: 50%;
     flex-direction: column;
+}
+
+#connect{
+    display: flex;
+    padding: 50px 0px;
+    justify-content:  space-evenly;
 }
 
 /*Screen size responsiveness*/

@@ -1,0 +1,102 @@
+<form action="https://httpbin.org/post" method="POST" target="_blank" id="form1" name="ContactForm">
+      <div class="form-row">
+        <!--Name-->
+          <div class="form-group col-md-6">
+            <label for="name">Name: </label>
+            <input type="text" class="form-control" name="fullname" id="name"  required>
+          </div>
+        <!--Email-->
+          <div class="form-group col-md-6">
+            <label for="email"> Email:</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+          </div>
+      </div>
+
+        <!--Address-->
+          <div class="form-group col-md-8">
+            <label for="address"> Mailing Address:</label>
+            <input type="text" class="form-control" name="address" id="address" placeholder="Unit/Apt Number, Street Address">
+          </div>
+
+      <div class="form-row">
+        <!--City-->
+          <div class="form-group col-md-4">
+            <label for="city" name="city">City: </label>
+            <input type="text" class="form-control" name="city" id="city" list="suggestions">
+          </div>
+
+        <!--Postal Code-->
+          <div class="form-group col-md-6">
+            <label for="postal" name="postal">Postal Code: </label>
+            <input type="text" class="form-control" name="postalCode" id="postal" pattern="[a-zA-Z][0-9][a-zA-Z]\s?[0-9][a-zA-Z][0-9]"
+              placeholder="A1B 2C3">
+          </div>
+      </div>
+
+      <!--Phone Number-->
+        <div class="form-group col-md-6">
+          <label for="tel"> Phone Number:</label>
+          <input type="number" class="form-control" name="phoneNumber" id="tel" >
+        </div>
+
+      <div class="form-group">
+        <!--Radio-->
+        <div class="form-check form-check-inline">
+          <!--Radio circles-->
+          <div class="form-row">
+            <input type="radio" class="form-check-input" name="radioSel" id="question" value="question">
+            <label for="question" class="form-check-label">Question</label>
+            <input type="radio" class="form-check-input" name="radioSel" id="comment" value="comment">
+            <label for="comment" class="form-check-label">Comment</label>
+            <input type="radio" class="form-check-input" name="radioSel" id="hiring" value="hiring">
+            <label for="hiring" class="form-check-label">Hiring</label>
+            <!--Input Area-->
+            <div class="form-group col-md-15">
+              <textArea class="form-control" name="questionTxt" id="questiontext" rows="3" style="display:none"
+                placeholder="Enter your questions here!"></textArea>
+              <textArea class="form-control" name="commentTxt" id="commenttext" rows="3" style="display:none"
+                placeholder="Enter your comments here!"></textArea>
+              <div id="hiretext" style="display:none">
+                <textArea class="form-control" name="hireTxt" rows="3"
+                  placeholder="Please insert the position details here!"></textArea><br>
+              </div>
+              <div class="form-inline col-md-6" id="rate" style="display:none">
+                <label for="rateInput">Please enter your rate: $</label>
+                <input type="number" class="form-control" name="hireRate" id="rateInput" step="0.01" placeholder="xx.xx/hr"><br><br>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <input type="submit" id="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+    </form>
+
+<datalist id="suggestions">
+  <!--[if lte IE 9]><select><![endif]-->
+  <option label="Barrie" value="Barrie"></option>
+  <option label="Calgary" value="Calgary"></option>
+  <option label="Charlottetown" value="Charlottetown"></option>
+  <option label="Chibougamau" value="Chibougamau"></option>
+  <option label="Chilliwack" value="Chilliwack"></option>
+  <option label="Cold Lake" value="Cold Lake"></option>
+  <option label="Dorval" value="Dorval"></option>
+  <option label="Edmonton" value="Edmonton"></option>
+  <option label="Flin Flon" value="Flin Flon"></option>
+  <option label="Hamilton" value="Hamilton"></option>
+  <option label="Iqualuit" value="Iqualuit"></option>
+  <option label="Ottawa" value="Ottawa"></option>
+  <option label="Miramichi" value="Miramichi"></option>
+  <option label="Montreal" value="Montreal"></option>
+  <option label="Red Deer" value="Red Deer"></option>
+  <option label="St. John" value="St. John"></option>
+  <option label="St. John's" value="St. John's"></option>
+  <option label="Toronto" value="Toronto"></option>
+  <option label="Vancouver" value="Vancouver"></option>
+  <option label="Whitehorse" value="Whitehorse"></option>
+  <option label="Winnipeg" value="Winnipeg"></option>
+  <option label="Yellowknife" value="Yellowknife"></option>
+  <!--[if lte IE 9]></select><![endif]-->
+</datalist>
